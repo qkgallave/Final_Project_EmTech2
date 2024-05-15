@@ -13,7 +13,6 @@ def preprocess_image(image):
     preprocessed_image = np.expand_dims(normalized_image, axis=0)
     return preprocessed_image
 
-# Display title and image
 st.title("Model Deployment on the Cloud")
 st.image("weather.jpg", width=400)
 st.text("Using the Weather Dataset to predict from an uploaded image.")
@@ -29,13 +28,12 @@ if uploaded_image is not None:
     # Preprocess the image
     preprocessed_image = preprocess_image(image)
 
-    # Make prediction
     prediction = model.predict(preprocessed_image)
 
     # Define categories
     categories = ['shine', 'sunset', 'rainy', 'cloudy']
 
-    # Create a dictionary to map indices to categories
+    # Create a dictionary to map index to categories
     category_mapping = {i: category for i, category in enumerate(categories)}
 
     # Display prediction
