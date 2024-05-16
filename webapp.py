@@ -15,14 +15,9 @@ def preprocess_image(image):
 
 st.title("Model Deployment on the Cloud")
 st.image("weather.jpg", width=400)
+st.text("An Application of Convolutional Neural Network in Weather
+         ('cloudy', 'rainy', 'shine', 'sunset') Prediction with an Accuracy Rate of 82%.")
 st.text("Using the Weather Dataset to predict from an uploaded image.")
-st.write("""
-         # Intel Image Classification
-         \Na Application of Convolutional Neural Network in Weather
-         ('cloudy', 'rainy', 'shine', 'sunset') Prediction with an Accuracy Rate of 82%.
-         """
-         )
-
 
 # Upload image
 uploaded_image = st.file_uploader("Choose an image that can be classified as rainy, sunny, shine, or cloudy: ", type=["jpg", "png", "jpeg"])
