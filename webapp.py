@@ -13,6 +13,7 @@ def preprocess_image(image):
     preprocessed_image = np.expand_dims(normalized_image, axis=0)
     return preprocessed_image
 
+st.write("Cañesa, Anjela T. | Llave, Kenneth Gabriel | CPE019 | CPE32S5")
 st.image("weather.jpg", width=400)
 st.write("""
         # Model Deployment on the Cloud
