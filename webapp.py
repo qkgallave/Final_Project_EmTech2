@@ -16,7 +16,7 @@ def preprocess_image(image):
 st.image("weather.jpg", width=400)
 st.write("""
         # Model Deployment on the Cloud
-        \nA An Application of Convolutional Neural Network in Weather ['cloudy', 'rainy', 'shine', 'sunset'] 
+        \n An Application of Convolutional Neural Network in Weather ['cloudy', 'rainy', 'shine', 'sunset'] 
         Prediction with an Accuracy Rate of 82%.
         """)
 st.text("Using the Weather Dataset to predict from an uploaded image.")
