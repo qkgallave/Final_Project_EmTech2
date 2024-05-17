@@ -23,7 +23,7 @@ st.write("""
 st.text("Using the Weather Dataset to predict from an uploaded image.")
 
 # Upload image
-uploaded_image = st.file_uploader("Choose an image that can be classified as rainy, sunny, shine, or cloudy: ", type=["jpg", "png", "jpeg"])
+uploaded_image = st.file_uploader("Choose an image that can be classified as rainy, sunset, sun shine, or cloudy: ", type=["jpg", "png", "jpeg"])
 
 if uploaded_image is not None:
     # Display the uploaded image
